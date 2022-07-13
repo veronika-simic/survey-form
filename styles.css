@@ -20,6 +20,11 @@ body {
 
 header {
    margin-top: 1.5rem;
+   margin-bottom: 2.5rem;
+}
+
+header > * {
+    margin-bottom: 1rem;
 }
 
 h1 {
@@ -35,3 +40,17 @@ header > p {
     font-weight: 200;
 }
 
+ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+ul > li {
+    font-size: 2rem;
+    list-style: none;
+
+}
+
+span {
+    font-weight: 400;
+}
