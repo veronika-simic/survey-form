@@ -67,10 +67,21 @@ form > p {
     text-align: center;
 }
 
+
 fieldset {
     border: none;
+    width: 100%;
 }
 
+fieldset:not(#user-information) {
+    display: inline-block;
+}
+
+fieldset > p {
+}
+
+.options {
+}
 /* user information */
 #user-information {
     text-align: center;
@@ -92,5 +103,4 @@ fieldset {
     margin-bottom: 1rem;
     width: 60%;
    
-
 }
