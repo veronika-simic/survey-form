@@ -80,7 +80,13 @@ fieldset:not(#user-information) {
 fieldset > p {
 }
 
+
+input {
+    display: block;
+}
+
 .options {
+
 }
 
 
