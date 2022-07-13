@@ -26,7 +26,7 @@
       </header>
       <form action="">
         <p>Tell us a little about yourself</p>
-        <fieldset>
+        <fieldset id="user-information">
           <label for="first-name">First Name: </label>
           <input id="first-name" name="first-name" type="text" required />
 
@@ -34,20 +34,213 @@
           <input id="last-name" name="last-name" type="text" required />
 
           <label for="email">Email: </label>
-          <input for="email" name="email" type="email" required />
-          <label for="user-age">How old are you? 
+          <input id="email" name="email" type="email" required />
+          <label for="user-age"
+            >How old are you?
             <select name="user-age" id="user-age">
-                <option value="">(select one)</option>
-                <option value="gen-z">10-25</option>
-                <option value="millennials">26-41</option>
-                <option value="gen-x">42-57</option>
-                <option value="boomers II">58-67</option>
-                <option value="boomers I">68-76</option>
-                <option value="post war">77-99</option>
+              <option value="">(select one)</option>
+              <option value="gen-z">10-25</option>
+              <option value="millennials">26-41</option>
+              <option value="gen-x">42-57</option>
+              <option value="boomers II">58-67</option>
+              <option value="boomers I">68-76</option>
+              <option value="post war">77-99</option>
             </select>
           </label>
-
         </fieldset>
+        <fieldset id="delivery">
+          <p>How satisfied are you with our delivery?</p>
+          <label for="very-satisfied"></label>
+          <input
+            id="very-satisfied"
+            name="delivery-satisfaction"
+            type="radio"
+            value="very-satisfied"
+          />
+          <label for="somewhat satisfied"></label>
+          <input
+            id="somewhat satisfied"
+            name="delivery-satisfaction"
+            type="radio"
+            value="somewhat-satisfied"
+          />
+          <label for="neutral"></label>
+          <input
+            id="neutral"
+            name="delivery-satisfaction"
+            type="radio"
+            value="neutral"
+          />
+          <label for="somewhat-unsatisfied"></label>
+          <input
+            id="somewhat-unsatisfied"
+            name="delivery-satisfaction"
+            type="radio"
+            value="somewhat-unsatisfied"
+          />
+          <label for="very-unsatisfied"></label>
+          <input
+            id="very-unsatisfied"
+            name="delivery-satisfaction"
+            type="radio"
+            value="very-unsatisfied"
+          />
+          <p>How do you rate delivery time of our company?</p>
+          <label for="very-satisfied"></label>
+          <input
+            id="very-satisfied"
+            name="delivery-satisfaction"
+            type="radio"
+            value="very-satisfied"
+          />
+          <label for="somewhat satisfied"></label>
+          <input
+            id="somewhat satisfied"
+            name="delivery-satisfaction"
+            type="radio"
+            value="somewhat-satisfied"
+          />
+          <label for="neutral"></label>
+          <input
+            id="neutral"
+            name="delivery-satisfaction"
+            type="radio"
+            value="neutral"
+          />
+          <label for="somewhat-unsatisfied"></label>
+          <input
+            id="somewhat-unsatisfied"
+            name="delivery-satisfaction"
+            type="radio"
+            value="somewhat-unsatisfied"
+          />
+          <label for="very-unsatisfied"></label>
+          <input
+            id="very-unsatisfied"
+            name="delivery-satisfaction"
+            type="radio"
+            value="very-unsatisfied"
+          />
+        </fieldset>
+        <fieldset id="product">
+          <p>Are you pleased with quality of our products?</p>
+          <label for="very-satisfied"></label>
+          <input
+            id="very-satisfied"
+            name="delivery-satisfaction"
+            type="radio"
+            value="very-satisfied"
+          />
+          <label for="somewhat satisfied"></label>
+          <input
+            id="somewhat satisfied"
+            name="delivery-satisfaction"
+            type="radio"
+            value="somewhat-satisfied"
+          />
+          <label for="neutral"></label>
+          <input
+            id="neutral"
+            name="delivery-satisfaction"
+            type="radio"
+            value="neutral"
+          />
+          <label for="somewhat-unsatisfied"></label>
+          <input
+            id="somewhat-unsatisfied"
+            name="delivery-satisfaction"
+            type="radio"
+            value="somewhat-unsatisfied"
+          />
+          <label for="very-unsatisfied"></label>
+          <input
+            id="very-unsatisfied"
+            name="delivery-satisfaction"
+            type="radio"
+            value="very-unsatisfied"
+          />
+          <p>Are you satisfied with packaging of our products?</p>
+          <label for="very-satisfied"></label>
+          <input
+            id="very-satisfied"
+            name="delivery-satisfaction"
+            type="radio"
+            value="very-satisfied"
+          />
+          <label for="somewhat satisfied"></label>
+          <input
+            id="somewhat satisfied"
+            name="delivery-satisfaction"
+            type="radio"
+            value="somewhat-satisfied"
+          />
+          <label for="neutral"></label>
+          <input
+            id="neutral"
+            name="delivery-satisfaction"
+            type="radio"
+            value="neutral"
+          />
+          <label for="somewhat-unsatisfied"></label>
+          <input
+            id="somewhat-unsatisfied"
+            name="delivery-satisfaction"
+            type="radio"
+            value="somewhat-unsatisfied"
+          />
+          <label for="very-unsatisfied"></label>
+          <input
+            id="very-unsatisfied"
+            name="delivery-satisfaction"
+            type="radio"
+            value="very-unsatisfied"
+          />
+        </fieldset>
+        <fieldset id="overall-experience">
+          <p>How pleased are you with the overall experience?</p>
+          <label for="very-satisfied"></label>
+          <input
+            id="very-satisfied"
+            name="delivery-satisfaction"
+            type="radio"
+            value="very-satisfied"
+          />
+          <label for="somewhat satisfied"></label>
+          <input
+            id="somewhat satisfied"
+            name="delivery-satisfaction"
+            type="radio"
+            value="somewhat-satisfied"
+          />
+          <label for="neutral"></label>
+          <input
+            id="neutral"
+            name="delivery-satisfaction"
+            type="radio"
+            value="neutral"
+          />
+          <label for="somewhat-unsatisfied"></label>
+          <input
+            id="somewhat-unsatisfied"
+            name="delivery-satisfaction"
+            type="radio"
+            value="somewhat-unsatisfied"
+          />
+          <label for="very-unsatisfied"></label>
+          <input
+            id="very-unsatisfied"
+            name="delivery-satisfaction"
+            type="radio"
+            value="very-unsatisfied"
+          />
+          <label>What do you like the most about our services? 
+            <textarea name="like" rows="3" cols="30" placeholder="I like..."></textarea>
+          </label>
+          <label>What can we improve? 
+            <textarea name="improve" rows="3" cols="30" placeholder="I wish if you could..."></textarea>
+          </label>
+        </fieldset>
+        <button>Submit by Email</button>
       </form>
     </main>
   </body>
