@@ -5,8 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="survey form" />
     <title>Survey form</title>
-    <link href="styles.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap"
+      rel="stylesheet"
+    />
     <script src="script.js" defer></script>
   </head>
   <body>
@@ -15,8 +18,9 @@
         <h1>Customer Satisfaction Survey</h1>
         <p>
           Thank you for taking Customer Satisfaction Survey. The survey will
-          take less than <span>5 minutes</span>. Click the <span>"Submit by Email" </span>button to submit
-          the survey or <span>"Print"</span> the form and fax it to us. Please rate your
+          take less than <span>5 minutes</span>. Click the
+          <span>"Submit by Email" </span>button to submit the survey or
+          <span>"Print"</span> the form and fax it to us. Please rate your
           satisfaction level with each of the following statements.
         </p>
         <ul>
@@ -28,7 +32,7 @@
         </ul>
       </header>
       <form action="">
-        <p>Tell us a little about yourself</p>
+        <p>Tell us a little bit about yourself</p>
         <fieldset id="user-information">
           <label for="first-name">First Name: </label>
           <input id="first-name" name="first-name" type="text" required />
@@ -38,6 +42,7 @@
 
           <label for="email">Email: </label>
           <input id="email" name="email" type="email" required />
+
           <label for="user-age"
             >How old are you?
             <select name="user-age" id="user-age">
@@ -236,11 +241,23 @@
             type="radio"
             value="very-unsatisfied"
           />
-          <label>What do you like the most about our services? 
-            <textarea name="like" rows="3" cols="30" placeholder="I like..."></textarea>
+          <label
+            >What do you like the most about our services?
+            <textarea
+              name="like"
+              rows="3"
+              cols="30"
+              placeholder="I like..."
+            ></textarea>
           </label>
-          <label>What can we improve? 
-            <textarea name="improve" rows="3" cols="30" placeholder="I wish if you could..."></textarea>
+          <label
+            >What can we improve?
+            <textarea
+              name="improve"
+              rows="3"
+              cols="30"
+              placeholder="I wish if you could..."
+            ></textarea>
           </label>
         </fieldset>
         <button>Submit by Email</button>
