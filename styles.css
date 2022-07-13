@@ -1,6 +1,37 @@
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    outline: none;
+    
+}
+
+html {
+    font-size: 62.5%; /* 10px*/
+}
+body {
+    font-family: Poppins, sans-serif;
+    margin: 0 auto;
+    width: 90%;
+
+}
+
+/* header */
+
+header {
+   margin-top: 1.5rem;
+}
+
+h1 {
+    font-size: 4rem;
+    text-align: center;
+}
+
+p {
+    font-size: 2rem;
+}
+
+header > p {
+    font-weight: 200;
 }
 
