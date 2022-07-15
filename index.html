@@ -17,22 +17,16 @@
     <main>
       <header>
         <h1><i class="far fa-list-alt"></i> Customer Satisfaction Survey</h1>
-        <p>
-          Thank you for taking Customer Satisfaction Survey. The survey will
-          take less than <span>5 minutes</span>. Click the
-          <span>"Submit by Email" </span>button to submit the survey or
-          <span>"Print"</span> the form and fax it to us. Please rate your
-          satisfaction level with each of the following statements.
-        </p>
-        <ul>
-          <li>1. Very satisfied</li>
-          <li>2. Somewhat satisfied</li>
-          <li>3. Neutral</li>
-          <li>4. Somewhat unsatisfied</li>
-          <li>5. Very unsatisfied</li>
-        </ul>
       </header>
       <form action="">
+        <div class="steps">
+          <div class="step current"></div>
+          <div class="step"></div>
+          <div class="step"></div>
+          <div class="step"></div>
+          <div class="step"></div>
+        </div>
+
         <p>Tell us a little bit about yourself</p>
         <fieldset id="user-information">
           <label for="first-name">First Name: </label>
@@ -56,6 +50,7 @@
               <option value="post war">77-99</option>
             </select>
           </label>
+
         </fieldset>
         <fieldset id="delivery">
           <p>How satisfied are you with our delivery?</p>
