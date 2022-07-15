@@ -205,7 +205,7 @@ header > p {
     padding:  0.5rem 0;
 }
 
-.survey-form .options input[type="radio"]:checked, 
+.survey-form .options input[type="radio"]:checked,  /* removes default dots of radio buttons */
 .survey-form .options input[type="radio"]:not(:checked) {
     position: absolute;
     left: -9999px;
@@ -263,3 +263,14 @@ header > p {
 .survey-form .rating input[type="radio"]:checked + label:after {
     opacity: 1;
 }
+
+/* rating footer */
+
+.survey-form .rating-footer {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.4rem;
+    color: #8e939b;
+    padding: 1.5rem 0 2.5rem;
+}
+
