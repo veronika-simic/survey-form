@@ -61,48 +61,79 @@
             </div>
           </div>
         </div>
-
-        <fieldset id="delivery">
-          <p>How satisfied are you with our delivery?</p>
-          <div class="options">
-            <input
-              id="very-satisfied"
-              name="delivery-satisfaction"
-              type="radio"
-              value="very-satisfied"
-            />
-            <label for="very-satisfied">1</label>
-
-            <input
-              id="somewhat satisfied"
-              name="delivery-satisfaction"
-              type="radio"
-              value="somewhat-satisfied"
-            />
-            <label for="somewhat satisfied">2</label>
-            <input
-              id="neutral"
-              name="delivery-satisfaction"
-              type="radio"
-              value="neutral"
-            />
-            <label for="neutral">3</label>
-            <input
-              id="somewhat-unsatisfied"
-              name="delivery-satisfaction"
-              type="radio"
-              value="somewhat-unsatisfied"
-            />
-            <label for="somewhat-unsatisfied">4</label>
-            <input
-              id="very-unsatisfied"
-              name="delivery-satisfaction"
-              type="radio"
-              value="very-unsatisfied"
-            />
-            <label for="very-unsatisfied">5</label>
+        <!--second survey page-->
+        <div class="step-content" data-step="2">
+          <div class="fields">
+            <p>How satisfied are you with our delivery?</p>
+            <fieldset id="delivery">
+              <div class="options">
+                <input
+                  id="radio1"
+                  name="delivery-satisfaction"
+                  type="radio"
+                  value="very-unsatisfied"
+                />
+                <label for="radio1">1</label>
+    
+                <input
+                  id="radio2"
+                  name="delivery-satisfaction"
+                  type="radio"
+                  value="somewhat-unsatisfied"
+                />
+                <label for="radio2">2</label>
+                <input
+                  id="radio3"
+                  name="delivery-satisfaction"
+                  type="radio"
+                  value="neutral"
+                />
+                <label for="radio3">3</label>
+                <input
+                  id="radio4"
+                  name="delivery-satisfaction"
+                  type="radio"
+                  value="somewhat-satisfied"
+                />
+                <label for="radio4">4</label>
+                <input
+                  id="radio5"
+                  name="delivery-satisfaction"
+                  type="radio"
+                  value="very-satisfied"
+                />
+                <label for="radio5">5</label>
+              </div>
+              <div class="rating-footer">
+                <span>Very unsatisfied</span>
+                <span>Very satisfied</span>
+              </div>
+              <p>Where did you hear about us?</p>
+              <div class="group">
+                <label for="radio6">
+                  <input id="radio6" name="hear_about_us" type="radio" value="search-engine">
+                  Search Engine
+                </label>
+                <label for="radio7">
+                  <input id="radio7" name="hear_about_us" type="radio" value="newsletter">
+                  Newsletter
+                </label>
+                <label for="radio8">
+                  <input id="radio8" name="hear_about_us" type="radio" value="social-media">
+                  Social media
+                </label>
+                <label for="radio9">
+                  <input id="radio9" name="hear_about_us" type="radio" value="advertisements">
+                  Advertisements
+                </label>
+              </div>
+              <div class="buttons">
+                <a href="#" class="btn" data-set-step="3"></a>
+              </div>
           </div>
-
+        </div>
+        
+        <!--third survey page-->
           <p>How do you rate delivery time of our company?</p>
           <div class="options">
             <input
