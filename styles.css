@@ -56,6 +56,10 @@ header > p {
     width: 60%;
 }
 
+.survey-form fieldset {
+    border: none;
+}
+
 .survey-form .fields {
     position: relative;
     padding: 2rem;
@@ -83,6 +87,23 @@ header > p {
     height: 4.7rem;
 }
 
+/* when user clicks on form element */
+.survey-form input[type="text"]:focus,
+.survey-form input[type="email"]:focus,
+.survey-form input[type="date"]:focus,
+.survey-form input[type="tel"]:focus,
+.survey-form select:focus {
+    border: 0.1rem solid #79094f;
+}
 
+/* placeholders */
+.survey-form input[type="text"]::placeholder,
+.survey-form input[type="email"]::placeholder,
+.survey-form input[type="date"]::placeholder,
+.survey-form input[type="tel"]::placeholder,
+.survey-form textarea::placeholder,
+.survey-form select:invalid {
+    color: #858688;
+}
 
 
