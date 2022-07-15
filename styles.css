@@ -162,7 +162,6 @@ header > p {
     align-self: center;
     display: flex;
     justify-content: space-between;
-    margin: 0 auto;
     margin-top: 1rem;
     position: relative;
     width: calc(100%-3.5rem);
@@ -175,7 +174,7 @@ header > p {
     width: 100%;
     height: 4px;
     background-color: #f2f4f7;
-    margin: auto 0;
+    margin: 1rem auto 0;
     top: 0;
     bottom: 0;
     z-index: 0;
@@ -197,3 +196,33 @@ header > p {
 .survey-form .steps .step.complete {
     background-color: #00d4ff;
 }
+
+/* options */
+
+.survey-form .options {
+    display: flex;
+    justify-content: space-between;
+    padding:  0.5rem 0;
+}
+
+.survey-form .options input[type="radio"]:checked, 
+.survey-form .options input[type="radio"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+
+.survey-form .options input[type="radio"]:checked + label,
+.survey-form .options input[type="radio"]:not(:checked) + label {
+    display: flex;
+    font-size: 1.4rem;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 3rem;
+    height: 3rem;
+    cursor: pointer;
+    color: #8e939b;
+    z-index: 5;
+}
+
+
