@@ -56,7 +56,6 @@
                 </select>
               </label>
             </fieldset>
-           
           </div>
           <div class="buttons">
             <a href="#" class="button" data-set-step="2">Next</a>
@@ -66,75 +65,94 @@
         <div class="step-content" data-step="2">
           <div class="fields">
             <p>How satisfied are you with our delivery?</p>
-              <div class="options">
+            <div class="options">
+              <input
+                id="radio1"
+                name="delivery-satisfaction"
+                type="radio"
+                value="very-unsatisfied"
+              />
+              <label for="radio1">1</label>
+
+              <input
+                id="radio2"
+                name="delivery-satisfaction"
+                type="radio"
+                value="somewhat-unsatisfied"
+              />
+              <label for="radio2">2</label>
+              <input
+                id="radio3"
+                name="delivery-satisfaction"
+                type="radio"
+                value="neutral"
+              />
+              <label for="radio3">3</label>
+              <input
+                id="radio4"
+                name="delivery-satisfaction"
+                type="radio"
+                value="somewhat-satisfied"
+              />
+              <label for="radio4">4</label>
+              <input
+                id="radio5"
+                name="delivery-satisfaction"
+                type="radio"
+                value="very-satisfied"
+              />
+              <label for="radio5">5</label>
+            </div>
+            <div class="rating-footer">
+              <span>Very unsatisfied</span>
+              <span>Very satisfied</span>
+            </div>
+            <p>Where did you hear about us?</p>
+            <div class="group">
+              <label for="radio6">
                 <input
-                  id="radio1"
-                  name="delivery-satisfaction"
+                  id="radio6"
+                  name="hear_about_us"
                   type="radio"
-                  value="very-unsatisfied"
+                  value="search-engine"
                 />
-                <label for="radio1">1</label>
-    
+                Search Engine
+              </label>
+              <label for="radio7">
                 <input
-                  id="radio2"
-                  name="delivery-satisfaction"
+                  id="radio7"
+                  name="hear_about_us"
                   type="radio"
-                  value="somewhat-unsatisfied"
+                  value="newsletter"
                 />
-                <label for="radio2">2</label>
+                Newsletter
+              </label>
+              <label for="radio8">
                 <input
-                  id="radio3"
-                  name="delivery-satisfaction"
+                  id="radio8"
+                  name="hear_about_us"
                   type="radio"
-                  value="neutral"
+                  value="social-media"
                 />
-                <label for="radio3">3</label>
+                Social media
+              </label>
+              <label for="radio9">
                 <input
-                  id="radio4"
-                  name="delivery-satisfaction"
+                  id="radio9"
+                  name="hear_about_us"
                   type="radio"
-                  value="somewhat-satisfied"
+                  value="advertisements"
                 />
-                <label for="radio4">4</label>
-                <input
-                  id="radio5"
-                  name="delivery-satisfaction"
-                  type="radio"
-                  value="very-satisfied"
-                />
-                <label for="radio5">5</label>
-              </div>
-              <div class="rating-footer">
-                <span>Very unsatisfied</span>
-                <span>Very satisfied</span>
-              </div>
-              <p>Where did you hear about us?</p>
-              <div class="group">
-                <label for="radio6">
-                  <input id="radio6" name="hear_about_us" type="radio" value="search-engine">
-                  Search Engine
-                </label>
-                <label for="radio7">
-                  <input id="radio7" name="hear_about_us" type="radio" value="newsletter">
-                  Newsletter
-                </label>
-                <label for="radio8">
-                  <input id="radio8" name="hear_about_us" type="radio" value="social-media">
-                  Social media
-                </label>
-                <label for="radio9">
-                  <input id="radio9" name="hear_about_us" type="radio" value="advertisements">
-                  Advertisements
-                </label>
-              </div>
-              
+                Advertisements
+              </label>
+            </div>
           </div>
           <div class="buttons">
             <a href="#" class="btn alt" data-set-step="1">Back</a>
             <a href="#" class="btn" data-set-step="3">Next</a>
           </div>
         </div>
-        
+
         <!--third survey page-->
         <div class="step-content" data-step="3">
           <div class="fields">
@@ -142,41 +160,41 @@
 
             <div class="options">
               <input
-                  id="radio10"
-                  name="delivery-satisfaction"
-                  type="radio"
-                  value="very-unsatisfied"
-                />
-                <label for="radio10">1</label>
-    
-                <input
-                  id="radio11"
-                  name="delivery-satisfaction"
-                  type="radio"
-                  value="somewhat-unsatisfied"
-                />
-                <label for="radio11">2</label>
-                <input
-                  id="radio12"
-                  name="delivery-satisfaction"
-                  type="radio"
-                  value="neutral"
-                />
-                <label for="radio12">3</label>
-                <input
-                  id="radio13"
-                  name="delivery-satisfaction"
-                  type="radio"
-                  value="somewhat-satisfied"
-                />
-                <label for="radio13">4</label>
-                <input
-                  id="radio14"
-                  name="delivery-satisfaction"
-                  type="radio"
-                  value="very-satisfied"
-                />
-                <label for="radio14">5</label>
+                id="radio10"
+                name="delivery-satisfaction"
+                type="radio"
+                value="very-unsatisfied"
+              />
+              <label for="radio10">1</label>
+
+              <input
+                id="radio11"
+                name="delivery-satisfaction"
+                type="radio"
+                value="somewhat-unsatisfied"
+              />
+              <label for="radio11">2</label>
+              <input
+                id="radio12"
+                name="delivery-satisfaction"
+                type="radio"
+                value="neutral"
+              />
+              <label for="radio12">3</label>
+              <input
+                id="radio13"
+                name="delivery-satisfaction"
+                type="radio"
+                value="somewhat-satisfied"
+              />
+              <label for="radio13">4</label>
+              <input
+                id="radio14"
+                name="delivery-satisfaction"
+                type="radio"
+                value="very-satisfied"
+              />
+              <label for="radio14">5</label>
             </div>
             <div class="rating-footer">
               <span>Very unsatisfied</span>
@@ -185,19 +203,33 @@
             <p>How would you like us to respond to you?</p>
             <div class="group">
               <label for="checkbox1">
-                <input id="checkbox1" name="contact-preference" type="checkbox" value="email">
+                <input
+                  id="checkbox1"
+                  name="contact-preference"
+                  type="checkbox"
+                  value="email"
+                />
                 Email
               </label>
               <label for="checkbox2">
-                <input id="checkbox2" name="contact-preference" type="checkbox" value="phone">
+                <input
+                  id="checkbox2"
+                  name="contact-preference"
+                  type="checkbox"
+                  value="phone"
+                />
                 Phone
               </label>
               <label for="checkbox3">
-                <input id="checkbox3" name="contact-preference" type="checkbox" value="post">
+                <input
+                  id="checkbox3"
+                  name="contact-preference"
+                  type="checkbox"
+                  value="post"
+                />
                 Post
               </label>
             </div>
-           
           </div>
           <div class="buttons">
             <a href="#" class="btn alt" data-set-step="2">Back</a>
@@ -211,41 +243,41 @@
             <p>Are you pleased with quality of our products?</p>
             <div class="options">
               <input
-                  id="radio15"
-                  name="delivery-satisfaction"
-                  type="radio"
-                  value="very-unsatisfied"
-                />
-                <label for="radio15">1</label>
-    
-                <input
-                  id="radio16"
-                  name="delivery-satisfaction"
-                  type="radio"
-                  value="somewhat-unsatisfied"
-                />
-                <label for="radio16">2</label>
-                <input
-                  id="radio17"
-                  name="delivery-satisfaction"
-                  type="radio"
-                  value="neutral"
-                />
-                <label for="radio17">3</label>
-                <input
-                  id="radio18"
-                  name="delivery-satisfaction"
-                  type="radio"
-                  value="somewhat-satisfied"
-                />
-                <label for="radio18">4</label>
-                <input
-                  id="radio19"
-                  name="delivery-satisfaction"
-                  type="radio"
-                  value="very-satisfied"
-                />
-                <label for="radio19">5</label>
+                id="radio15"
+                name="delivery-satisfaction"
+                type="radio"
+                value="very-unsatisfied"
+              />
+              <label for="radio15">1</label>
+
+              <input
+                id="radio16"
+                name="delivery-satisfaction"
+                type="radio"
+                value="somewhat-unsatisfied"
+              />
+              <label for="radio16">2</label>
+              <input
+                id="radio17"
+                name="delivery-satisfaction"
+                type="radio"
+                value="neutral"
+              />
+              <label for="radio17">3</label>
+              <input
+                id="radio18"
+                name="delivery-satisfaction"
+                type="radio"
+                value="somewhat-satisfied"
+              />
+              <label for="radio18">4</label>
+              <input
+                id="radio19"
+                name="delivery-satisfaction"
+                type="radio"
+                value="very-satisfied"
+              />
+              <label for="radio19">5</label>
             </div>
             <div class="rating-footer">
               <span>Very unsatisfied</span>
@@ -256,41 +288,41 @@
             <p>Are you satisfied with packaging of our products?</p>
             <div class="options">
               <input
-                  id="radio20"
-                  name="delivery-satisfaction"
-                  type="radio"
-                  value="very-unsatisfied"
-                />
-                <label for="radio20">1</label>
-    
-                <input
-                  id="radio21"
-                  name="delivery-satisfaction"
-                  type="radio"
-                  value="somewhat-unsatisfied"
-                />
-                <label for="radio21">2</label>
-                <input
-                  id="radio22"
-                  name="delivery-satisfaction"
-                  type="radio"
-                  value="neutral"
-                />
-                <label for="radio22">3</label>
-                <input
-                  id="radio23"
-                  name="delivery-satisfaction"
-                  type="radio"
-                  value="somewhat-satisfied"
-                />
-                <label for="radio23">4</label>
-                <input
-                  id="radio24"
-                  name="delivery-satisfaction"
-                  type="radio"
-                  value="very-satisfied"
-                />
-                <label for="radio24">5</label>
+                id="radio20"
+                name="delivery-satisfaction"
+                type="radio"
+                value="very-unsatisfied"
+              />
+              <label for="radio20">1</label>
+
+              <input
+                id="radio21"
+                name="delivery-satisfaction"
+                type="radio"
+                value="somewhat-unsatisfied"
+              />
+              <label for="radio21">2</label>
+              <input
+                id="radio22"
+                name="delivery-satisfaction"
+                type="radio"
+                value="neutral"
+              />
+              <label for="radio22">3</label>
+              <input
+                id="radio23"
+                name="delivery-satisfaction"
+                type="radio"
+                value="somewhat-satisfied"
+              />
+              <label for="radio23">4</label>
+              <input
+                id="radio24"
+                name="delivery-satisfaction"
+                type="radio"
+                value="very-satisfied"
+              />
+              <label for="radio24">5</label>
             </div>
             <div class="rating-footer">
               <span>Very unsatisfied</span>
@@ -302,89 +334,79 @@
             <a href="#" class="btn" data-set-step="5">Next</a>
           </div>
         </div>
-          
-          
-            
 
+        <!--fifth survey page-->
+        <div class="step-content" data-step="5">
+          <div class="fields">
+            <p>How pleased are you with the overall experience?</p>
+            <div class="options">
+              <input
+                id="radio25"
+                name="delivery-satisfaction"
+                type="radio"
+                value="very-unsatisfied"
+              />
+              <label for="radio25">1</label>
 
-
-
-
-
-
-
-
-            
-            
-  
-
-
-
-
-        <fieldset id="overall-experience">
-          <p>How pleased are you with the overall experience?</p>
-          <div class="options">
-            <input
-              id="very-satisfied"
-              name="delivery-satisfaction"
-              type="radio"
-              value="very-satisfied"
-            />
-            <label for="very-satisfied">1</label>
-
-            <input
-              id="somewhat satisfied"
-              name="delivery-satisfaction"
-              type="radio"
-              value="somewhat-satisfied"
-            />
-            <label for="somewhat satisfied">2</label>
-
-            <input
-              id="neutral"
-              name="delivery-satisfaction"
-              type="radio"
-              value="neutral"
-            />
-            <label for="neutral">3</label>
-
-            <input
-              id="somewhat-unsatisfied"
-              name="delivery-satisfaction"
-              type="radio"
-              value="somewhat-unsatisfied"
-            />
-            <label for="somewhat-unsatisfied">4</label>
-
-            <input
-              id="very-unsatisfied"
-              name="delivery-satisfaction"
-              type="radio"
-              value="very-unsatisfied"
-            />
-            <label for="very-unsatisfied">5</label>
+              <input
+                id="radio26"
+                name="delivery-satisfaction"
+                type="radio"
+                value="somewhat-unsatisfied"
+              />
+              <label for="radio26">2</label>
+              <input
+                id="radio27"
+                name="delivery-satisfaction"
+                type="radio"
+                value="neutral"
+              />
+              <label for="radio27">3</label>
+              <input
+                id="radio28"
+                name="delivery-satisfaction"
+                type="radio"
+                value="somewhat-satisfied"
+              />
+              <label for="radio28">4</label>
+              <input
+                id="radio29"
+                name="delivery-satisfaction"
+                type="radio"
+                value="very-satisfied"
+              />
+              <label for="radio29">5</label>
+            </div>
+            <div class="rating-footer">
+              <span>Very unsatisfied</span>
+              <span>Very satisfied</span>
+            </div>
           </div>
-
-          <label
-            >What do you like the most about our services?
-            <textarea
-              name="like"
-              rows="3"
-              cols="30"
-              placeholder="I like..."
-            ></textarea>
-          </label>
-          <label
-            >What can we improve?
-            <textarea
-              name="improve"
-              rows="3"
-              cols="30"
-              placeholder="I wish if you could..."
-            ></textarea>
-          </label>
-        </fieldset>
-        <button>Submit by Email</button>
+          <div class="fields">
+            <label for="likes"
+              >What do you like the most about our services?
+              <textarea
+                name="like"
+                rows="3"
+                cols="30"
+                placeholder="I like..."
+              ></textarea>
+            </label>
+            <label for="improve"
+              >What can we improve?
+              <textarea
+                name="improve"
+                rows="3"
+                cols="30"
+                placeholder="I wish if you could..."
+              ></textarea>
+            </label>
+          </div>
+          <div class="buttons">
+            <a href="#" class="btn alt" data-set-step="4">Back</a>
+            <a href="#" class="bnt">Submit</a>
+          </div>
+        </div>
       </form>
     </main>
   </body>
