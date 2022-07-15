@@ -211,7 +211,7 @@ header > p {
     left: -9999px;
 }
 
-.survey-form .options input[type="radio"]:checked + label,
+.survey-form .options input[type="radio"]:checked + label, /* using + selects adjacent label of that radio button*/
 .survey-form .options input[type="radio"]:not(:checked) + label {
     display: flex;
     font-size: 1.4rem;
@@ -225,4 +225,41 @@ header > p {
     z-index: 5;
 }
 
+.survey-form .options input[type="radio"]:checked + label:before,
+.survey-form .options input[type="radio"]:not(:checked) + label:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3rem;
+    height: 3rem;
+    border: 0.1rem solid #dfe0e0;
+    border-radius: 100%;
+    background: #dfe0e0;
+    z-index: -1;
+}
 
+.survey-form .options input[type="radio"]:checked + label::after,
+.survey-form .options input[type="radio"]:not(:checked) + label::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 100%;
+    background: #79094f;
+    z-index: -1;
+}
+
+.survey-form .options input[type="radio"]:not(:checked) + label:after {
+    opacity: 0;
+}
+
+.survey-form .options input[type="radio"]:checked + label {
+    color: #fff;
+}
+
+.survey-form .rating input[type="radio"]:checked + label:after {
+    opacity: 1;
+}
