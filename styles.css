@@ -92,7 +92,8 @@ header > p {
 .survey-form input[type="email"]:focus,
 .survey-form input[type="date"]:focus,
 .survey-form input[type="tel"]:focus,
-.survey-form select:focus {
+.survey-form select:focus,
+.survey-form textarea:focus {
     border: 0.1rem solid #79094f;
 }
 
@@ -104,6 +105,16 @@ header > p {
 .survey-form textarea::placeholder,
 .survey-form select:invalid {
     color: #858688;
+}
+
+/* textarea */
+.survey-form textarea {
+    border: 0.1rem solid #dfe0e0;
+    margin-top: 1.5rem;
+    padding: 1.5rem;
+    resize: none; /* user can't resize textarea */
+    width: 100%;
+    height: 15rem;
 }
 
 
