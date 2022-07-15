@@ -149,3 +149,51 @@ header > p {
     border-radius: 2.5rem;
     color: #79094f; 
 }
+
+.survey-form label, 
+.survey-form p {
+    color: rgba(0,0,0,0.7);
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+/* steps/questions */
+.survey-form .steps {
+    align-self: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 1rem;
+    position: relative;
+    width: calc(100%-3.5rem);
+}
+.survey-form .steps::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: #f2f4f7;
+    margin: auto 0;
+    top: 0;
+    bottom: 0;
+    z-index: 0;
+}
+
+.survey-form .steps .step {
+    background-color: #f2f4f7;
+    border: 0.3rem solid  #f2f4f7;
+    border-radius: 5rem;
+    height: 2.5rem;
+    width: 2.5rem;
+    z-index: 1;
+}
+
+.survey-form .steps .step.current {
+    background-color: #79094f;
+}
+
+.survey-form .steps .step.complete {
+    background-color: #00d4ff;
+}
