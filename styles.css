@@ -9,6 +9,7 @@
 html {
     background: linear-gradient(#79094f, #00d4ff);
     font-size: 62.5%; /* 10px*/
+    height: 100vh;
 }
 
 body {
@@ -21,7 +22,7 @@ body {
 
 header {
    color: white;
-   margin-top: 1.5rem;
+   margin-top: 2rem;
    margin-bottom: 2.5rem;
 }
 
@@ -40,30 +41,41 @@ h1 i {
 }
 
 p {
-    font-size: 2.5rem;
     margin-bottom: 2rem;
-}
-
-header > p {
-    font-weight: 200;
 }
 
 
 /* form */
+
 .survey-form {
     background-color: white;
     box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
-    margin: 0 auto;
+    margin: 6rem auto;
     width: 60%;
+    height: 80vh;
 }
 
 .survey-form fieldset {
     border: none;
 }
 
+
+
 .survey-form .fields {
     position: relative;
     padding: 2rem;
+}
+
+.survey-form .fields p {
+    font-size: 2.5rem;
+}
+
+.survey-form #user-information label {
+    font-size: 2rem;
+}
+
+.survey-form #user-information input {
+    margin-bottom: 1.5rem;
 }
 
 .survey-form select {
@@ -226,8 +238,8 @@ header > p {
     z-index: 5;
 }
 
-.survey-form .options input[type="radio"]:checked + label:before,
-.survey-form .options input[type="radio"]:not(:checked) + label:before {
+.survey-form .options input[type="radio"]:checked + label::before,
+.survey-form .options input[type="radio"]:not(:checked) + label::before {
     content: "";
     position: absolute;
     top: 0;
@@ -253,7 +265,7 @@ header > p {
     z-index: -1;
 }
 
-.survey-form .options input[type="radio"]:not(:checked) + label:after {
+.survey-form .options input[type="radio"]:not(:checked) + label::after {
     opacity: 0;
 }
 
@@ -261,7 +273,7 @@ header > p {
     color: #fff;
 }
 
-.survey-form .rating input[type="radio"]:checked + label:after {
+.survey-form .rating input[type="radio"]:checked + label::after {
     opacity: 1;
 }
 
@@ -301,11 +313,17 @@ header > p {
     border: 0.2rem solid #79094f;
 }
 
-.survey-form .group input[type="radio"]:checked,
-.survey-form .group input[type="checkbox"]:checked {
-
+.survey-form .group input[type="radio"]:checked + label,
+.survey-form .group input[type="checkbox"]:checked  + label {
     border: 0.2rem solid #79094f;
     background-color: #79094f;
 }
 
 
+.survey-form .step-content.current {
+    display: block;
+}
+
+.survey-form .step-content {
+    display: none;
+}
