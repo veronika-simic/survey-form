@@ -10,6 +10,8 @@ Survey form project created with HTML, CSS and JavaScript
 
 ## General info
 Survey form project is made to develop my skills in UI/UX design and DOM manipulation. This survey contains 5 pages. User should be able to navigate through pages.
+When user submits data a message should appear.
+
 
 
 ## Technologies
