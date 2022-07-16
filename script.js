@@ -18,3 +18,10 @@ document.querySelectorAll("[data-set-step]").forEach(element => { /* select all 
 	};
 });
 
+
+/* submit button */
+
+const submitButton = document.querySelector('.display-message')
+submitButton.addEventListener('click', function(){
+    submitButton.classList.add('display')
+})

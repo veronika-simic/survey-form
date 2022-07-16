@@ -326,3 +326,13 @@ p {
 .survey-form .step-content {
     display: none;
 }
+
+.survey-form .display-message {
+    display: none;
+}
+
+.survey-form .display-message .display {
+    background-color: #00d4ff;
+    color: rgba(0,0,0,0.7);
+    display: block;
+}
