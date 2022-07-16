@@ -282,3 +282,30 @@ header > p {
     justify-content: center;
     padding-bottom: 1.5rem;
 }
+
+.survey-form .group label {
+    align-items: center;
+    display: flex;
+    height: 2.5rem;
+    font-size: 1.5rem;
+    padding-bottom: 0.5rem;   
+}
+
+.survey-form .group input {
+    margin-right: 1rem;
+}
+
+
+.survey-form .group input[type="radio"]:hover,
+.survey-form .group input[type="checkbox"]:hover {
+    border: 0.2rem solid #79094f;
+}
+
+.survey-form .group input[type="radio"]:checked,
+.survey-form .group input[type="checkbox"]:checked {
+
+    border: 0.2rem solid #79094f;
+    background-color: #79094f;
+}
+
+
